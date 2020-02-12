@@ -2,9 +2,13 @@ import 'package:flutter/material.dart';
 void main()
 {
   runApp(MaterialApp(
-    home:Container(
-      color: Colors.white,
-      child: (Text('Hello world')),
+    home:Center(
+      child: Row(
+        children: <Widget>[
+          Text('hello 1'),
+          Text('2'),
+        ],
+      )
     )
   ));
 }
