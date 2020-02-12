@@ -3,6 +3,7 @@ import 'package:ecomapp_flutter/Homepage.dart';
 void main()
 {
   runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
     home:HomePage()
       )
     );
