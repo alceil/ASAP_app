@@ -3,7 +3,7 @@ void main()
 {
   runApp(MaterialApp(
     home:Center(
-      child: Row(
+      child: Column(
         children: <Widget>[
           Text('hello 1'),
           Text('2'),
