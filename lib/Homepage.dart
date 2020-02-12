@@ -19,8 +19,14 @@ class _HomePageState extends State<HomePage> {
     drawer: Drawer(
       child: ListView(
         children: <Widget>[
-          UserAccountsDrawerHeader(accountName: Text('Ashish Tom'), accountEmail: Text('ashishshajisrampickal@gmail.com')),
-          
+          UserAccountsDrawerHeader(accountName: Text('Ashish Tom'), accountEmail: Text('ashishshajisrampickal@gmail.com'),
+          currentAccountPicture: GestureDetector(
+            child: CircleAvatar(
+              backgroundColor: Colors.grey,
+              child: Icon(Icons.people,color: Colors.white,)
+            ),
+          ),),
+
 
         ],
       ),
