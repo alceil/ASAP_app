@@ -3,10 +3,32 @@ void main()
 {
   runApp(MaterialApp(
     home:Center(
-      child: Column(
+      child: ListView(
         children: <Widget>[
-          Text('hello 1'),
-          Text('2'),
+          Text('one'),
+          Text('one'),
+          Text('one'),
+          Text('one'),
+          Text('one'),
+          Text('one'),
+          Text('one'),
+          Text('one'),
+          Text('one'),
+          Text('one'),
+          Text('one'),
+          Text('one'),
+          Text('one'),
+          Text('one'),
+          Text('one'),
+          Text('one'),
+          Text('one'),
+          Text('one'),
+          Text('one'),
+          Text('one'),
+          Text('one'),
+          Text('one'),
+          Text('one'),
+
         ],
       )
     )
