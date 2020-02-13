@@ -13,7 +13,7 @@ class _ProductsState extends State<Products> {
         "price":"50"
     },
     {
-      "name":"Blazer",
+      "name":"Reddress",
       "picture":"images/products/dress1.jpeg",
       "old_price":"100",
       "price":"50"
@@ -50,7 +50,7 @@ class Single_prod extends StatelessWidget {
             child: InkWell(onTap: (){},
               child: GridTile(
                 footer: Container(
-                  color: Colors.white,
+                  color: Colors.white70,
                   child: ListTile(
                     leading:Text(prod_name),
                     title: Text("\$$prod_newprice"),
