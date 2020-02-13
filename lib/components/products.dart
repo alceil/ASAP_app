@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ecomapp_flutter/pages/productdetails.dart';
 class Products extends StatefulWidget {
   @override
   _ProductsState createState() => _ProductsState();
@@ -47,7 +48,7 @@ class Single_prod extends StatelessWidget {
     return Card(
         child: Hero(tag: prod_name,
           child:Material(
-            child: InkWell(onTap: (){},
+            child: InkWell(onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => ProductDetails(pdt_name:prod_name,pdt_newprice: prod_newprice,pdt_oldprice: prod_oldprice,pdt_picture: prod_pic,))),
               child: GridTile(
                 footer: Container(
                   color: Colors.white70,
