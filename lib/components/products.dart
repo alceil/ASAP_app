@@ -19,6 +19,30 @@ class _ProductsState extends State<Products> {
       "old_price":"100",
       "price":"50"
     },
+    {
+      "name":"Hills",
+      "picture":"images/products/hills1.jpeg",
+      "old_price":"100",
+      "price":"50"
+    },
+    {
+      "name":"Pants",
+      "picture":"images/products/pants1.jpg",
+      "old_price":"100",
+      "price":"50"
+    },
+    {
+      "name":"Shoe",
+      "picture":"images/products/shoe1.jpg",
+      "old_price":"100",
+      "price":"50"
+    },
+    {
+      "name":"Skirt",
+      "picture":"images/products/sk1.jpeg",
+      "old_price":"100",
+      "price":"50"
+    },
   ];
   @override
   Widget build(BuildContext context) {
@@ -52,11 +76,12 @@ class Single_prod extends StatelessWidget {
               child: GridTile(
                 footer: Container(
                   color: Colors.white70,
-                  child: ListTile(
-                    leading:Text(prod_name),
-                    title: Text("\$$prod_newprice"),
-                    subtitle:Text("\$$prod_oldprice",style: TextStyle(decoration: TextDecoration.lineThrough),),
-                  ),
+                  child: Row(
+                    children: <Widget>[
+                      Expanded(child: Text(prod_name)),
+                      Text("\$${prod_newprice}")
+                    ],
+                  )
                 ),
                 child:Image.asset(prod_pic,fit: BoxFit.cover),
               ),
