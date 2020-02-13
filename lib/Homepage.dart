@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:carousel_pro/carousel_pro.dart';
+import 'package:ecomapp_flutter/components/horizontal_listview.dart';
 class HomePage extends StatefulWidget {
   @override
   _HomePageState createState() => _HomePageState();
@@ -7,8 +9,28 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
+    Widget image_carousel =  Container(
+      height: 200,
+      child: Carousel(
+        boxFit: BoxFit.cover,
+        images: [
+          AssetImage('images/m1.jpeg'),
+          AssetImage('images/c1.jpg'),
+          AssetImage('images/m2.jpg'),
+          AssetImage('images/w1.jpeg'),
+          AssetImage('images/w3.jpeg'),
+          AssetImage('images/w4.jpeg')
+        ],
+//        autoplay: false,
+        animationCurve:Curves.fastOutSlowIn ,
+        animationDuration:Duration(milliseconds: 1000),
+        dotSize: 3.0,
+        indicatorBgPadding: 5.0,
+      ),
+    );
     return Scaffold(
       appBar: AppBar(
+        elevation: 0.0,
         backgroundColor: Colors.blue,
         title: Text('FashApp'),
         actions: <Widget>[
@@ -85,6 +107,14 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
     ),
+      body: ListView(
+        children: <Widget>[
+          image_carousel,
+          Padding(padding: const EdgeInsets.all(1.0),
+          child: Text('Categories'),),
+          HorizontalList()
+        ],
+      ),
     );
   }
 }
