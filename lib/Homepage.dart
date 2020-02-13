@@ -116,7 +116,7 @@ class _HomePageState extends State<HomePage> {
           HorizontalList(),
           Padding(padding: const EdgeInsets.all(20.0),
             child: Text('Recent products'),),
-          Products(),
+          Products()
         ],
       ),
     );
