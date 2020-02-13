@@ -53,7 +53,22 @@ class _ProductDetailsState extends State<ProductDetails> {
           Row(
             children: <Widget>[
               Expanded(
-                child: MaterialButton(onPressed: (){},
+                child: MaterialButton(onPressed: (){
+                  showDialog(context: context,builder: (context){
+                    return AlertDialog(
+                      title: Text('Size'),
+                      content:Text('choose the size'),
+                      actions: <Widget>[
+                        MaterialButton(onPressed: (){
+                          Navigator.of(context).pop(context);
+                        },
+                          child: Text('Close'),
+                        )
+                      ],
+                    );
+                  }
+                  );
+                },
                   color: Colors.white,
                   textColor: Colors.grey,
                   child:Row(
