@@ -30,9 +30,13 @@ class _ProductDetailsState extends State<ProductDetails> {
               child: Container(
                 color: Colors.white,
                 child: Image.asset(widget.pdt_picture),
-              )
+              ),
+             footer:Container(
+                color: Colors.white,
+              child:Text('Red Dress')
             ),
-          )
+            ),
+          ),
         ],
       ),
     );
