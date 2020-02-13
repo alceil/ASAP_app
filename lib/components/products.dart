@@ -31,6 +31,11 @@ class _ProductsState extends State<Products> {
   }
 }
 class Single_prod extends StatelessWidget {
+  final  prod_name;
+  final  prod_pic;
+  final  prod_oldprice;
+  final  prod_newprice;
+  Single_prod({this.prod_name,this.prod_newprice,this.prod_oldprice,this.prod_pic});
   @override
   Widget build(BuildContext context) {
     return Container();
