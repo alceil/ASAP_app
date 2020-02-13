@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
 import 'package:ecomapp_flutter/components/horizontal_listview.dart';
+import 'package:ecomapp_flutter/components/products.dart';
 class HomePage extends StatefulWidget {
   @override
   _HomePageState createState() => _HomePageState();
@@ -115,6 +116,7 @@ class _HomePageState extends State<HomePage> {
           HorizontalList(),
           Padding(padding: const EdgeInsets.all(20.0),
             child: Text('Recent products'),),
+          Products(),
         ],
       ),
     );
