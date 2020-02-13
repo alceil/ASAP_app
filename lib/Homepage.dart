@@ -113,7 +113,7 @@ class _HomePageState extends State<HomePage> {
           Padding(padding: const EdgeInsets.all(1.0),
           child: Text('Categories'),),
           HorizontalList(),
-          Padding(padding: const EdgeInsets.all(1.0),
+          Padding(padding: const EdgeInsets.all(20.0),
             child: Text('Recent products'),),
         ],
       ),
