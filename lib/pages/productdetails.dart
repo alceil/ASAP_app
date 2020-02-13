@@ -84,7 +84,22 @@ class _ProductDetailsState extends State<ProductDetails> {
                 ),
               ),
               Expanded(
-                child: MaterialButton(onPressed: (){},
+                child: MaterialButton(onPressed: (){
+                  showDialog(context: context,builder: (context){
+                    return AlertDialog(
+                      title: Text('Color'),
+                      content:Text('choose the color'),
+                      actions: <Widget>[
+                        MaterialButton(onPressed: (){
+                          Navigator.of(context).pop(context);
+                        },
+                          child: Text('Close'),
+                        )
+                      ],
+                    );
+                  }
+                  );
+                },
                     color: Colors.white,
                     textColor: Colors.grey,
                     child:Row(
@@ -100,7 +115,22 @@ class _ProductDetailsState extends State<ProductDetails> {
                 ),
               ),
               Expanded(
-                child: MaterialButton(onPressed: (){},
+                child: MaterialButton(onPressed: (){
+                  showDialog(context: context,builder: (context){
+                    return AlertDialog(
+                      title: Text('Quantity'),
+                      content:Text('choose the Quantity'),
+                      actions: <Widget>[
+                        MaterialButton(onPressed: (){
+                          Navigator.of(context).pop(context);
+                        },
+                          child: Text('Close'),
+                        )
+                      ],
+                    );
+                  }
+                  );
+                },
                     color: Colors.white,
                     textColor: Colors.grey,
                     child:Row(
@@ -130,6 +160,34 @@ class _ProductDetailsState extends State<ProductDetails> {
               ),
               IconButton(icon: Icon(Icons.shopping_cart),color: Colors.red, onPressed: (){}),
               IconButton(icon: Icon(Icons.favorite),color: Colors.red, onPressed: (){})
+            ],
+          ),
+          ListTile(
+            title: Text('Product details'),
+            subtitle: Text("orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"),
+          ),
+          Row(
+            children: <Widget>[
+              Padding(padding: const EdgeInsets.fromLTRB(12.0, 5.0, 5.0, 5.0),
+              child:Text('Product Name')),
+              Padding(padding: const EdgeInsets.all(5.0),
+                  child:Text(widget.pdt_name))
+            ],
+          ),
+          Row(
+            children: <Widget>[
+              Padding(padding: const EdgeInsets.fromLTRB(12.0, 5.0, 5.0, 5.0),
+                  child:Text('Product Brand')),
+              Padding(padding: const EdgeInsets.all(5.0),
+                  child:Text('Brand X'))
+            ],
+          ),
+          Row(
+            children: <Widget>[
+              Padding(padding: const EdgeInsets.fromLTRB(12.0, 5.0, 5.0, 5.0),
+                  child:Text('Product Condition')),
+              Padding(padding: const EdgeInsets.all(5.0),
+                  child:Text('New'))
             ],
           )
         ],
