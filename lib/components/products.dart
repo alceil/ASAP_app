@@ -27,7 +27,9 @@ class _ProductsState extends State<Products> {
   ];
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return GridView.builder(
+      itemCount: product_list.length,
+        gridDelegate:SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2) , itemBuilder: )
   }
 }
 class Single_prod extends StatelessWidget {
