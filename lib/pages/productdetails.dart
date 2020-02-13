@@ -113,8 +113,8 @@ class _ProductDetailsState extends State<ProductDetails> {
                     child:Text('Buy Now'),
                 ),
               ),
-              IconButton(icon: Icon(Icons.shopping_cart), onPressed: (){}),
-              IconButton(icon: Icon(Icons.favorite), onPressed: (){})
+              IconButton(icon: Icon(Icons.shopping_cart),color: Colors.red, onPressed: (){}),
+              IconButton(icon: Icon(Icons.favorite),color: Colors.red, onPressed: (){})
             ],
           )
         ],
