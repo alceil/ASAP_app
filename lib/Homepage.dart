@@ -112,7 +112,9 @@ class _HomePageState extends State<HomePage> {
           image_carousel,
           Padding(padding: const EdgeInsets.all(1.0),
           child: Text('Categories'),),
-          HorizontalList()
+          HorizontalList(),
+          Padding(padding: const EdgeInsets.all(1.0),
+            child: Text('Recent products'),),
         ],
       ),
     );
