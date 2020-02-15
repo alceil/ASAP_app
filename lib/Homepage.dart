@@ -78,8 +78,8 @@ class _HomePageState extends State<HomePage> {
           InkWell(
             onTap: (){},
             child: ListTile(
-              title: Text('categories'),
-              leading: Icon(Icons.category),
+              title: Text('Shopping Cart'),
+              leading: Icon(Icons.shopping_cart),
             ),
           ),
           InkWell(
