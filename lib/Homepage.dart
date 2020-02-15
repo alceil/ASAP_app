@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
 import 'package:ecomapp_flutter/components/horizontal_listview.dart';
 import 'package:ecomapp_flutter/components/products.dart';
+import 'package:ecomapp_flutter/pages/cart.dart';
 class HomePage extends StatefulWidget {
   @override
   _HomePageState createState() => _HomePageState();
@@ -27,6 +28,7 @@ class _HomePageState extends State<HomePage> {
         animationDuration:Duration(milliseconds: 1000),
         dotSize: 3.0,
         indicatorBgPadding: 5.0,
+        dotBgColor: Colors.transparent,
       ),
     );
     return Scaffold(
@@ -36,7 +38,7 @@ class _HomePageState extends State<HomePage> {
         title: Text('FashApp'),
         actions: <Widget>[
           IconButton(icon:Icon(Icons.search,color: Colors.white,) , onPressed: (){}),
-          IconButton(icon:Icon(Icons.shopping_cart,color: Colors.white,) , onPressed: (){})
+          IconButton(icon:Icon(Icons.shopping_cart,color: Colors.white,) , onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>Cart()));})
         ],
       ),
     drawer: Drawer(
@@ -76,7 +78,7 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
           InkWell(
-            onTap: (){},
+            onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>Cart()));},
             child: ListTile(
               title: Text('Shopping Cart'),
               leading: Icon(Icons.shopping_cart),

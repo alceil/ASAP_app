@@ -1,5 +1,6 @@
 import 'package:ecomapp_flutter/Homepage.dart';
 import 'package:flutter/material.dart';
+import 'package:ecomapp_flutter/main.dart';
 class ProductDetails extends StatefulWidget {
  final pdt_name;
  final String  pdt_oldprice;
@@ -17,10 +18,9 @@ class _ProductDetailsState extends State<ProductDetails> {
       appBar: AppBar(
         elevation: 0.0,
         backgroundColor: Colors.blue,
-        title: InkWell(onTap:(){Navigator.of(context).pop(MaterialPageRoute(builder: (context) => HomePage()));},child: Text('FashApp')),
+        title: InkWell(onTap:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>HomePage()));},child: Text('FashApp')),
         actions: <Widget>[
           IconButton(icon:Icon(Icons.search,color: Colors.white,) , onPressed: (){}),
-          IconButton(icon:Icon(Icons.shopping_cart,color: Colors.white,) , onPressed: (){})
         ],
       ),
       body: ListView(
@@ -190,8 +190,15 @@ class _ProductDetailsState extends State<ProductDetails> {
               Padding(padding: const EdgeInsets.all(5.0),
                   child:Text('New'))
             ],
-          )
+          ),
+          Divider(),
+          Padding(padding:const EdgeInsets.all(5),child: Text('Simliar Products')),
+          Container(
+            height: 320,
+            child: SimliarProducts(),
+          ),
         ],
+
       ),
     );
   }
