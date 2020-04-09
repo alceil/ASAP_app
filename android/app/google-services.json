@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1046504474190",
+    "firebase_url": "https://ecommerce-cce1d.firebaseio.com",
+    "project_id": "ecommerce-cce1d",
+    "storage_bucket": "ecommerce-cce1d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1046504474190:android:e4cb0236c3dd7a8b85e51f",
+        "android_client_info": {
+          "package_name": "com.ashishtom.ecomapp_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1046504474190-bkldd03fiueq1huhjf6q5gho18l78co1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsJKPzVOdMXLDIO8rLQkzzakFJ87WTrjE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1046504474190-bkldd03fiueq1huhjf6q5gho18l78co1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

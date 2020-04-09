@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ecomapp_flutter/components/cart_products.dart';
 class Cart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -11,6 +12,7 @@ class Cart extends StatelessWidget {
           IconButton(icon:Icon(Icons.search,color: Colors.white,) , onPressed: (){}),
         ],
       ),
+      body: Cart_Products(),
       bottomNavigationBar:Container(
         color: Colors.white,
         child:Row(
